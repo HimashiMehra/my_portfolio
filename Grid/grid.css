@@ -1,0 +1,22 @@
+body {
+    margin: 100px;
+    padding: 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    background-color: rgb(202, 240, 141);
+    padding: 30px;
+
+}
+
+.box {
+    color: rgb(15, 15, 15);
+    padding: 20px;
+
+}

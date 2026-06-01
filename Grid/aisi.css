@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repea();
+}

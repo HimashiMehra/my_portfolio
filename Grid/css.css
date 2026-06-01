@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 900px;
+    height: 500px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "a1 a2 a3 a4"
+        "b1 m m b4"
+        "c1 m m c4"
+        "d1 d2 d3 d4";
+}
+
+.container div {
+    background-color: rgb(84, 82, 204);
+}
+
+.a1 {
+    grid-area: a1;
+}
+
+.a2 {
+    grid-area: a2;
+}
+
+.a3 {
+    grid-area: a3;
+}
+
+.a4 {
+    grid-area: a4;
+}
+
+.b1 {
+    grid-area: b1;
+}
+
+.b4 {
+    grid-area: b4;
+}
+
+.c1 {
+    grid-area: c1;
+}
+
+.c4 {
+    grid-area: c4;
+}
+
+.d1 {
+    grid-area: d1;
+}
+
+.d2 {
+    grid-area: d2;
+}
+
+.d3 {
+    grid-area: d3;
+}
+
+.d4 {
+    grid-area: d4;
+}
+
+.m {
+    grid-area: m;
+}

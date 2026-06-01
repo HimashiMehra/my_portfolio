@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightgray;
+}
+
+.keyboard {
+    display: grid;
+
+    grid-template-columns: repeat(14, 60px);
+
+    gap: 8px;
+
+    padding: 20px;
+
+    background-color: rgb(210, 210, 210);
+
+    border-radius: 10px;
+}
+
+button {
+    height: 50px;
+
+    border: 1px solid gray;
+
+    border-radius: 5px;
+
+    background-color: white;
+
+    cursor: pointer;
+}
+
+/* Bigger Keys */
+
+.backspace {
+    grid-column: span 2;
+}
+
+.tab {
+    grid-column: span 2;
+}
+
+.caps {
+    grid-column: span 2;
+}
+
+.enter {
+    grid-column: span 2;
+}
+
+.shift {
+    grid-column: span 2;
+}
+
+.space {
+    grid-column: span 5;
+}
