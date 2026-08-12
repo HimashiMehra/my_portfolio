@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Background Color Changes Using DOM</title>
+</head>
+
+<body>
+    <!--#background color Changes randomly after click on btn -->
+    <button class="btn">Click Here</button>
+
+    <script>
+
+        // let result = document.querySelector(".btn")
+        let result = document.getElementsByClassName("btn")[0];
+        result.addEventListener("click", function () {
+            let hexa = "01234355ABCDF";
+            let color = "";
+            for (let i = 0; i < 6; i++) {
+                let randomColor = Math.floor(Math.random() * 16)
+                color = color + hexa[randomColor]
+            }
+            let finalcolor = "#" + color;
+            document.body.style.background = finalcolor;
+            console.log(finalcolor);
+        })
+    </script>
+</body>
+
+</html>

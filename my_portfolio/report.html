@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Report</title>
+    <meta name="description" content="Detailed report on the development of this portfolio website.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">My<span>Portfolio</span></div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="videoDemo.html">Video Demo</a>
+                <a href="report.html" class="active">Report</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="report-page">
+        <section>
+            <h1 class="section-title">Development Report</h1>
+            
+            <div class="report-container">
+                
+                <h2>1. Reflection (250+ Words)</h2>
+                <p>Building this portfolio website has been a significantly rewarding experience that solidified my understanding of modern web development principles. The primary goal was to create a professional, responsive, and visually striking personal portfolio using purely core web technologies—HTML5, CSS3, and Vanilla JavaScript—without relying on external frameworks like Bootstrap or React. This constraint was incredibly beneficial as it forced me to deeply engage with modern CSS layout modules like CSS Grid and Flexbox, which are essential for crafting complex, responsive designs that adapt seamlessly across devices.</p>
+                <p>Throughout the development process, I learned the importance of planning a robust CSS architecture. By utilizing CSS custom properties (variables) for colors, spacing, and typography, I was able to maintain consistency across all five pages and create a cohesive dark and light color combination theme. Implementing the mobile-first approach ensured that the core structure was sound before adding complex desktop layouts. I particularly enjoyed creating the responsive navigation bar with a custom hamburger menu using JavaScript, which enhanced the user experience on mobile devices.</p>
+                <p>The project also taught me valuable lessons about accessibility and semantic HTML. By using tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;section&gt;</code>, I ensured the code is readable by both developers and assistive technologies. Overall, this assignment has boosted my confidence in my ability to take a design concept and translate it into clean, maintainable, and interactive web code from scratch.</p>
+                
+                <h2>2. Learning Experience</h2>
+                <p>My key learning outcomes included mastering CSS Grid for the project cards layout, understanding how to implement custom form validation using JavaScript before submitting via <code>mailto:</code>, and properly embedding third-party content like Google Maps and YouTube videos ensuring they remain responsive.</p>
+
+                <h2>3. Development Process</h2>
+                <p>The development followed a systematic approach:</p>
+                <ul>
+                    <li><p><strong>Planning:</strong> Outlining the folder structure and identifying required assets.</p></li>
+                    <li><p><strong>HTML Skeleton:</strong> Building semantic markup for all five pages.</p></li>
+                    <li><p><strong>Styling (CSS):</strong> Establishing the design system (variables, fonts) in <code>style.css</code> and applying it to layouts.</p></li>
+                    <li><p><strong>Interactivity (JS):</strong> Adding the mobile navigation toggle and form validation in <code>script.js</code>.</p></li>
+                    <li><p><strong>Testing:</strong> Verifying responsiveness across different viewports.</p></li>
+                </ul>
+
+                <h2>4. Design Decisions</h2>
+                <p>I opted for a modern, dark-themed aesthetic with vibrant electric blue and purple accents to give it a premium, tech-focused feel. The typography pairs 'Outfit' for bold, modern headings and 'Inter' for highly readable body text. Glassmorphism effects (subtle transparency and blur) were used on the navigation and cards to add depth.</p>
+
+                <h2>5. Problems Faced and Debugging</h2>
+                <p>A significant challenge was making the CSS Grid on the projects page responsive without using media queries for every breakpoint. I solved this by utilizing the <code>repeat(auto-fill, minmax(350px, 1fr))</code> function in CSS Grid, which automatically handles the wrapping of cards. Additionally, aligning the custom form validation error messages required careful DOM manipulation in JavaScript.</p>
+
+                <h2>6. Font and Colour Selection</h2>
+                <ul>
+                    <li><p><strong>Fonts:</strong> Google Fonts: 'Outfit' (Headings) and 'Inter' (Body).</p></li>
+                    <li><p><strong>Colours:</strong> Backgrounds (Deep Blue <code>#0f172a</code>, <code>#1e293b</code>), Text (Light <code>#f8fafc</code>, <code>#cbd5e1</code>), Accents (Blue <code>#3b82f6</code>, Purple <code>#8b5cf6</code>).</p></li>
+                </ul>
+
+                <h2>7. Inspiration Websites</h2>
+                <p>The design was inspired by modern tech portfolios and platforms like Dribbble, Awwwards, and the clean UI of Vercel and Stripe, focusing on dark modes and vibrant gradients.</p>
+
+                <h2>8. Validation Screenshots</h2>
+                <div class="validation-images">
+                    <div class="validation-box">
+                        <p><strong>HTML Validation Screenshot Placeholder</strong></p>
+                        <p>(Insert image showing W3C HTML validation success)</p>
+                        <img src="https://via.placeholder.com/400x200?text=HTML+Validation" alt="HTML Validation">
+                    </div>
+                    <div class="validation-box">
+                        <p><strong>CSS Validation Screenshot Placeholder</strong></p>
+                        <p>(Insert image showing W3C CSS validation success)</p>
+                        <img src="https://via.placeholder.com/400x200?text=CSS+Validation" alt="CSS Validation">
+                    </div>
+                </div>
+
+                <h2>9. Video Demonstration</h2>
+                <p>The video demonstration of this project can be found on the <a href="videoDemo.html" class="report-link">Video Demo page</a>, or directly at: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="report-link">YouTube URL Placeholder</a>.</p>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-icon" aria-label="GitHub">GH</a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">LI</a>
+            <a href="#" class="social-icon" aria-label="Twitter">TW</a>
+        </div>
+        <p class="footer-text">&copy; 2026 Alex Developer. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

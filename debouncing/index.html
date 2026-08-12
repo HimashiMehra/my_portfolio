@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>debouncing</title>
+</head>
+
+<body>
+
+    <h1>weather debouncing</h1>
+    <div class="search">
+        <input type="text" id="searchBar" placeholder="Search Here...">
+    </div>
+
+    <script>
+
+        function debounce(fn, d) {
+            let timerId;
+            return function (...args) {
+                clearTimeout(timerId);
+                timerId = setTimeout(() => {
+                    fn(...args);
+                }, d);
+            }
+        }
+
+        let debouncedFunction = debounce(getData, 1000);
+
+        function getData(cityName) {
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=cbea8be86625e4f90f67ab796d471f6f&units=metric`).then((response) => {
+                return response.json();
+                console.log("Api Called !")
+            }).then((data) => {
+                console.log(data)
+                return data;
+            });
+        }
+
+        const input = document.getElementById("searchBar");
+        input.addEventListener("input", (e) => {
+
+            let res = e.target.value;
+            console.log(res);
+            debouncedFunction(res);
+        })
+
+        // function throttle(fn, d) {
+        //     let timer;
+        //     return function (...args) {
+        //         clearTimeout(timer);
+
+        //         timer = setTimeout(() => {
+        //             fn(...args);
+        //         }, d);
+        //     }
+        // }
+
+
+    </script>
+</body>
+
+</html>
